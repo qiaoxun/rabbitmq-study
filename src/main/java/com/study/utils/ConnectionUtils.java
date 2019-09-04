@@ -1,4 +1,4 @@
-package com.study.standard;
+package com.study.utils;
 
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;

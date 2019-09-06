@@ -16,6 +16,8 @@ public class Receiver {
 
         // * (star) can substitute for exactly one word.
         // # (hash) can substitute for zero or more words.
+        // Goods.spoon matches Goods.*
+        // Goods.spoon.using matches Goods.#
         channel.queueBind(QUEUE_NAME, Sender.EXCHANGE_NAME, "Goods.*");
 //        channel.queueBind(QUEUE_NAME, Sender.EXCHANGE_NAME, "Goods.#");
 

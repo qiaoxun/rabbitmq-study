@@ -1,4 +1,4 @@
-package com.study;
+package com.study.springboot;
 
 import com.study.springboot.receiver.Receiver;
 import org.springframework.amqp.core.Binding;
@@ -54,7 +54,6 @@ public class App
 
     public static void main( String[] args )
     {
-//        RabbitTemplate.ConfirmCallback
         SpringApplication.run(App.class);
     }
 }

@@ -1,6 +1,6 @@
 package com.study.springboot.sender;
 
-import com.study.App;
+import com.study.springboot.App;
 import com.study.springboot.receiver.Receiver;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.CommandLineRunner;

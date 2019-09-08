@@ -6,9 +6,20 @@
 
   <groupId>com.study</groupId>
   <artifactId>rabbitmq-study</artifactId>
+  <packaging>pom</packaging>
   <version>1.0</version>
+  <modules>
+    <module>plain-java</module>
+    <module>spring-boot</module>
+  </modules>
 
   <name>rabbitmq-study</name>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.6.RELEASE</version>
+  </parent>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,21 +27,5 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.rabbitmq</groupId>
-      <artifactId>amqp-client</artifactId>
-      <version>3.6.5</version>
-    </dependency>
-  </dependencies>
 
-  <build>
-
-  </build>
 </project>
